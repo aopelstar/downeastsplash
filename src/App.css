@@ -1,33 +1,138 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.header{
+  font-family: 'Lora', serif;
+  font-weight: 500;
+  font-size: 6vh;
+  margin: 0px auto;
+  height: auto;
+  width: 100vw;
+  background-color: #8998ae;
   color: white;
+  display: flex;
+  position: relative;
+  z-index: 3;
+  top: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+.background-image{
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.background-photo{
+  position: fixed;
+  height: 100vh;
+  width: 125vw;
+  overflow: hidden;
+  z-index: 1;
+  opacity: .35;
+}
+
+.header-text{
+  margin: 5px auto;
+
+}
+
+.tooth-image{
+  position: relative;
+  z-index: 3;
+ 
+}
+
+.tooth-photo{
+  width: 75vw;
+  display: block;
+  margin: 150px auto 85px auto;
+}
+
+.footer{
+  position: relative;
+  z-index: 3;
+  background-color: #8998ae;
+  height: auto;
+  width: 100vw;
+  color: white;
+  font-family: 'Niconne', cursive;
+  font-size: 5vh;
+  padding-bottom: 2px;
+}
+
+.footer-text-one{
+  margin: 10px 0px 5px 15px;
+}
+
+.footer-text-two{
+  margin-left: 45px;
+  margin-bottom: 5px;
+  
+}
+
+@media(min-width: 350px){
+  .header{
+    font-size: 5vh;
   }
-  to {
-    transform: rotate(360deg);
+
+  .tooth-photo{
+    margin-bottom: 195px;
+  }
+
+  .footer{
+    font-size: 3.5vh;
+  }
+}
+
+@media(min-width: 550px){
+  .header{
+    font-size: 12vh;
+  }
+
+  .tooth-photo{
+    width: 55vw;
+    height: 60vh;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .footer{
+    font-size: 9vh;
+  }
+
+  .footer-text-one{
+    margin-left:115px;
+  }
+
+  .footer-text-two{
+    margin-left: 210px;
+  }
+}
+
+@media(min-width: 760px){
+  .header{ font-size: 8vh;}
+
+  .footer{
+    font-size: 6vh;
+
+  }
+
+  .footer-text-one{
+    margin-left: 65px;
+  }
+
+  .footer-text-two{
+    margin-left: 150px;
+  }
+}
+
+@media(min-width: 1020px){
+  .header{
+    font-size: 12vh;
+  }
+
+  .footer{
+    font-size: 9vh;
+  }
+
+  .footer-text-two{
+    margin-left: 200px;
   }
 }
