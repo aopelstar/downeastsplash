@@ -17,14 +17,15 @@
   height: 100vh;
   width: 200vw;
   left: -100px;
-  opacity: .15;;
+  opacity: .15;
+  overflow-x: hidden;
 }
 
 .logo-image{
   height: 250px;
   width: 300px;
   position: absolute;
-  left: 37px;
+  left: 10px;
   top: 15px;
   z-index: 2;
 }
@@ -32,11 +33,11 @@
 .footer{
   position: relative;
   z-index: 2;
-  margin-top: 400px;
+  margin-top: 300px;
   width: 100vw;
   height: 167px;
   background-color: var(--blue);
-  color: var(--grey);
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -52,5 +53,160 @@
 
 a{
   text-decoration: none;
-  color: var(--grey);
+  color: white;
+}
+
+@media(min-width:375px){
+  .logo-image{
+    margin-left: 37px;
+  }
+
+  .footer{
+    margin-top: 400px;
+  }
+}
+
+@media(min-width: 410px){
+  .logo-image{
+    height: 280px;
+    width: 350px;
+    margin-left: 32px;
+  }
+
+  .footer{
+    margin-top:500px;
+    height: 136px;
+  }
+}
+
+@media(min-width: 550px){
+  .header{
+    height: 75px;
+  }
+  .logo-image{
+    width:200px;
+    height: 160px;
+    margin-left:184px;
+  }
+
+  .footer{
+    margin-top: 142px;
+    height: 100px;
+    
+  }
+
+  .footer>div{
+    font-size: 6.5vh;
+  }
+}
+
+@media(min-width: 650px){
+  .logo-image{
+    width: 300px;
+    height: 250px;
+  }
+
+  .footer{
+    margin-top:200px;
+  }
+}
+
+@media(min-width: 730px){
+  .footer{
+    margin-top: 235px;
+  }
+}
+
+@media(min-height: 800px){
+  .footer{
+    margin-top:545px;
+  }
+}
+
+@media(min-width: 750px){
+  .header{
+    height: 150px;
+  }
+  
+  .logo-image{
+    width: 700px;
+    height:560px;
+    top: 50px;
+    margin-left: 34px;
+
+  }
+
+  .footer{
+    margin-top: 624px;
+    height: 250px;
+  }
+
+  .footer>div{
+    font-size: 4vh;
+  }
+}
+
+@media(min-width: 800px){
+  .header{
+    height: 100px;
+  }
+
+  .logo-image{
+    width: 300px;
+    height: 240px;
+    left: 245px;
+    top: 20px;
+  }
+
+  .footer{
+    margin-top: 200px;
+    height: 75px;
+  }
+}
+
+@media(min-width: 1000px){
+
+  .header{
+    height: 150px;
+  }
+  .logo-image{
+    width: 700px;
+    height:560px;
+    top: 40px;
+    left: 162px;
+    margin-left: 0;
+
+  }
+  .footer{
+    height: 150px;
+    margin-top:468px;
+  }
+}
+
+@media(min-height: 1300px){
+  .footer{
+    height: 300px;
+    margin-top: 915px;
+  }
+
+  .footer>div{
+    font-size: 3.5vh;
+  }
+}
+
+@media(min-width: 1300px){
+  .logo-image{
+    width: 800px;
+    height: 640px;
+    left: 283px;
+  }
+
+  .footer{
+    height: 300px;
+    margin-top: 570px;
+  }
+
+  .footer>div{
+    font-size: 5vh;
+  }
 }
