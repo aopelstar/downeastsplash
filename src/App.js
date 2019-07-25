@@ -15,13 +15,21 @@ function App() {
       </div>
       <div className="footer">
         <div>
-          New website coming soon
+          New website coming soon.
         </div>
         <div>
-          Now accepting new patients.
+          Now accepting new patients for August.
         </div>
         <div>
           Please call: <a href= "tel:207-667-3009">(207) 667-3009</a> to make an appointment.
+        </div>
+        <div >
+          <div className="main-address">
+            99 Oak Street
+          </div>
+          <div className="main-address">
+            Ellsworth, ME 04605
+          </div>
         </div>
       </div>
     </div>

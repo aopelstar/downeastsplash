@@ -56,6 +56,8 @@ a{
   color: white;
 }
 
+
+
 @media(min-width:375px){
   .logo-image{
     margin-left: 37px;
@@ -63,6 +65,7 @@ a{
 
   .footer{
     margin-top: 400px;
+    height:auto;
   }
 }
 
@@ -75,7 +78,7 @@ a{
 
   .footer{
     margin-top:500px;
-    height: 136px;
+    height: auto;
   }
 }
 
@@ -98,6 +101,7 @@ a{
   .footer>div{
     font-size: 6.5vh;
   }
+ 
 }
 
 @media(min-width: 650px){
